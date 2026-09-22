@@ -1,7 +1,7 @@
 {
   "name": "td-colors-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "A lightweight TypeScript color utility library for validating, converting and mapping named colors, hex, RGB and RGBA values.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -15,15 +15,20 @@
   },
   "keywords": [
     "colors",
-    "utilities",
+    "color-utils",
     "typescript",
     "color-conversion",
-    "color-manipulation"
+    "color-validation",
+    "hex-to-rgb",
+    "rgb-to-hex",
+    "css-colors",
+    "named-colors",
+    "theme-utils"
   ],
   "author": "Jarosław Tusiński",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
@@ -38,5 +43,8 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "td-colors-names": "^1.0.0"
   }
 }
