@@ -1,6 +1,6 @@
 {
   "name": "td-colors-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight TypeScript color utility library for validating, converting and mapping named colors, hex, RGB and RGBA values.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

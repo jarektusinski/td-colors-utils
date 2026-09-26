@@ -9,7 +9,7 @@ const throwDigitHexError = (hexLength: 3 | 4 | 6 | 8): never => {
 };
 
 /** @internal */
-const createHex = (value: string): string => value.includes('#') ? value : `#${value}`;
+const createHex = (value: string): string => (value.includes('#') ? value : `#${value}`);
 
 // ___________________________________________________________________
 
@@ -41,10 +41,13 @@ const make8DigitHexa = (value: string): HexaDigit8 => {
   return throwDigitHexError(8);
 };
 
-interface RgbaProp {
+interface RgbProp {
   red: number;
   blue: number;
   green: number;
+}
+
+interface RgbaProp extends RgbProp {
   alpha?: number;
 }
 
@@ -70,6 +73,7 @@ export type {
   Name,
   Rgb,
   Rgba,
+  RgbProp,
   RgbaProp,
   RgbArray,
   RgbaArray,
